@@ -1,0 +1,133 @@
+/*img {
+	height: 100vh;
+	width: 200vh;
+	display: center;
+}*/
+
+body {
+	background-image: url(rick.png);
+	background-size: 190vh ;
+
+}
+
+/* GLOBAL STYLES */
+body {
+  
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+/*RICK AND MORTY FONT*/
+@font-face {
+  font-family: morty;
+  src: url(morty.ttf);
+}
+
+h1 {
+	
+  font-family: morty;
+  src: url(morty.ttf);
+   color: #97ce4c;
+
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+	      animation-delay: 5s;
+
+  color: #97ce4c;
+  font-family: morty;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+
+}
+
+.typewriter1 h1 {
+	color: #97ce4c;
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+	typing 3.5s steps(30, end),
+	blink-caret .9s step-end infinite;
+	animation-delay: 5s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/*.typewriter h1 {
+  animation: 
+    typing 3.5s steps(40, end),
+    blinking-cursor .5s step-end infinite;
+}*/
+
+/*h1 {
+
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+}*/
+
+/*ul {
+	display: block;
+	align-items: center;
+	padding-top:  40px;
+}*/
+
+.container2 {
+	padding-bottom: 100px;
+	position: relative;
+	direction: right;
+}
+
+.container {
+	padding: 100px;
+}
+
+.btn {
+  color: white;
+}
+
+img{
+	width: 286px;
+	height: 180px;
+}
+
+li{
+/*	justify-content: left;
+}*/
+
+	display: inline-block;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+
+}
